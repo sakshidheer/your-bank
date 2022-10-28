@@ -9,12 +9,14 @@ import { LoginScreenComponent } from './login-screen/login-screen.component';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
 import {MatIconModule} from '@angular/material/icon';
+import { HeaderComponent } from './header/header.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginScreenComponent
+    LoginScreenComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
