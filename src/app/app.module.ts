@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LoginScreenComponent } from './login-screen/login-screen.component';
 import { HeaderComponent } from './header/header.component';
+import { ButtonComponent } from './button/button.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginScreenComponent,
-    HeaderComponent
+    HeaderComponent,
+    ButtonComponent
   ],
   imports: [
     BrowserModule,

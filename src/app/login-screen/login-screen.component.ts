@@ -7,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginScreenComponent implements OnInit {
   hide = true;
+  signInText= "Sign In";
+  cancelText = "Cancel";
+  signInColor = "primary"
   constructor() { }
 
   ngOnInit(): void {
