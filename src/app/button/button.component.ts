@@ -9,7 +9,7 @@ export class ButtonComponent implements OnInit {
 
   @Input() text:string="";
   @Input() color:string="";
-
+  @Input() size:string="small";
   constructor() { }
 
   ngOnInit(): void {
@@ -22,4 +22,15 @@ export class ButtonComponent implements OnInit {
         return ''
   }
 
+  getWidth(): string{
+    if(this.size == 'large')
+      return "100px"
+    return "80px"
+  }
+
+  getHeight(): string{
+    if(this.size == 'large')
+      return "30px"
+    return "30px"
+  }
 }
