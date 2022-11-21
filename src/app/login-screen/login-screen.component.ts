@@ -15,4 +15,8 @@ export class LoginScreenComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  doSignIn(event:Event):void {
+    console.log("Sign in button clicked")
+  }
+
 }

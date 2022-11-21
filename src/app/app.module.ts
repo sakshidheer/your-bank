@@ -8,6 +8,7 @@ import { HeaderComponent } from './header/header.component';
 import { ButtonComponent } from './button/button.component';
 import { InputComponent } from './input/input.component';
 import { HomeComponent } from './home/home.component';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -23,6 +24,7 @@ import { HomeComponent } from './home/home.component';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

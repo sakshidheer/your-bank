@@ -1,2 +1,5 @@
-<button [ngStyle]="{backgroundColor:getBgColor(),
-    width:getWidth(),height:getHeight()}">{{text}}</button>
+<button [ngStyle]="{
+    backgroundColor:getBgColor(),
+    width:getWidth(),
+    height:getHeight()
+}" (click)="clickHandler()">{{text}}</button>

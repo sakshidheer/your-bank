@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-button',
@@ -10,6 +10,8 @@ export class ButtonComponent implements OnInit {
   @Input() text:string="";
   @Input() color:string="";
   @Input() size:string="small";
+
+  @Output() newItemEmitter = new EventEmitter();
   constructor() { }
 
   ngOnInit(): void {
@@ -32,5 +34,9 @@ export class ButtonComponent implements OnInit {
     if(this.size == 'large')
       return "30px"
     return "30px"
+  }
+
+  clickHandler() :void{
+    this.newItemEmitter.emit();
   }
 }

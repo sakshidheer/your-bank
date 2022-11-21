@@ -9,7 +9,7 @@
     <input name="password" type="password">
   </div>
   <div class="buttonSection">
-    <app-button [text]="signInText" [color]="signInColor"></app-button>
+    <app-button [text]="signInText" [color]="signInColor" (newItemEmitter)="doSignIn($event)"></app-button>
     <app-button [text]="cancelText"></app-button>
   </div>
   <div>Not a user ? <a routerLink="/signup">SignUp</a></div>
