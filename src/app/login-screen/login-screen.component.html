@@ -1,13 +1,9 @@
 <form>
   <h1>Sign in</h1>
-  <div>
-    <label for="userName">UserName</label>
-    <input name="userName">
-  </div>
-  <div>
-    <label for="password">Password</label>
-    <input name="password" type="password">
-  </div>
+
+  <app-input [label]="userNameLabel" [name]="userName"></app-input>
+  <app-input [label]="passwordLabel" [name]="passwordName" [type]="passwordType"></app-input>
+  
   <div class="buttonSection">
     <app-button [text]="signInText" [color]="signInColor" (newItemEmitter)="doSignIn($event)"></app-button>
     <app-button [text]="cancelText"></app-button>

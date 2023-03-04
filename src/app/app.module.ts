@@ -9,6 +9,7 @@ import { ButtonComponent } from './button/button.component';
 import { InputComponent } from './input/input.component';
 import { HomeComponent } from './home/home.component';
 import { FormsModule } from '@angular/forms';
+import { SignupPageComponent } from './signup-page/signup-page.component';
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import { FormsModule } from '@angular/forms';
     HeaderComponent,
     ButtonComponent,
     InputComponent,
-    HomeComponent
+    HomeComponent,
+    SignupPageComponent
   ],
   imports: [
     BrowserModule,

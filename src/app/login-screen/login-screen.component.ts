@@ -9,7 +9,12 @@ export class LoginScreenComponent implements OnInit {
   hide = true;
   signInText= "Sign In";
   cancelText = "Cancel";
-  signInColor = "primary"
+  signInColor = "primary";
+  userNameLabel:string ="User name";
+  userName:string = "userName";
+  passwordLabel:string ="Password";
+  passwordName:string = "password";
+  passwordType:string = "password";
   constructor() { }
 
   ngOnInit(): void {
