@@ -11,7 +11,7 @@ export class ButtonComponent implements OnInit {
   @Input() color:string="";
   @Input() size:string="small";
 
-  @Output() newItemEmitter = new EventEmitter();
+  @Output() onClickEvent = new EventEmitter();
   constructor() { }
 
   ngOnInit(): void {
@@ -37,6 +37,6 @@ export class ButtonComponent implements OnInit {
   }
 
   clickHandler() :void{
-    this.newItemEmitter.emit();
+    this.onClickEvent.emit();
   }
 }
